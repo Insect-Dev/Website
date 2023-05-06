@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .menu:has(:hover) :not(:hover) {
-    @apply text-slate-400;
+    @apply text-slate-500;
 }
 
 .menu * {
@@ -11,4 +11,8 @@
 
 .menu :hover {
     transform: scale(105%);
+}
+
+.navbar {
+    --tw-bg-opacity: .5!important;
 }
