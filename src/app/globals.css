@@ -3,6 +3,7 @@
 @tailwind utilities;
 .menu:has(:hover) :not(:hover) {
     @apply text-slate-500;
+    transform: scale(10%);
 }
 
 .menu * {
