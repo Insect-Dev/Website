@@ -13,7 +13,3 @@
 .menu :hover {
     transform: scale(105%);
 }
-
-.navbar {
-    --tw-bg-opacity: .5!important;
-}

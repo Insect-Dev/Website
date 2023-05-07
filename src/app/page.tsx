@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-start space-y-12 lg:px-[30%] px-20 bg-white dark:bg-zinc-900 dark:text-white text-justify">
       <div className="fixed top-0 flex items-center justify-between h-16 w-full bg-white/50 dark:bg-zinc-900/50 p-5 backdrop-blur-[2px] border-b border-gray-200 navbar">
