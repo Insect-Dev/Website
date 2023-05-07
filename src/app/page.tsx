@@ -18,6 +18,17 @@ export default function Home() {
       </div>
 
       <div className="space-y-2 pt-14 pb-24 text-lg">
+
+        <div className="bg-red-500 w-full [min-height:20px] p-2 text-white">
+          <div className="bg-lime-500 w-1/3 p-3">
+            <h2 className="text-xl font-semibold">About Us</h2>
+            <p>
+              We are a group creating games. <br />
+              Currently we are only 2 people, but we hope to grow.
+            </p>
+          </div>
+        </div>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ex nec nisl suscipit sollicitudin. Vestibulum metus diam, tristique a dictum in, sagittis eget turpis. Cras venenatis fermentum dictum. Etiam mi urna, consequat in fringilla ac, aliquam egestas ipsum. Nullam quis ultricies augue. Morbi cursus id velit sed consectetur. Aenean tellus enim, porttitor a finibus non, tempor sit amet ipsum.
         </p><p>
