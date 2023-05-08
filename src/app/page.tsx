@@ -33,20 +33,39 @@ export default function Home() {
           </div>
           <div className="bg-blue-500 w-2/3 p-3">
             <h2 className="text-xl font-semibold">Our Team</h2>
-            {
-              [
-                {
-                  name: "Tomek", 
-                  since: "2023",
-                  image: "https://source.unsplash.com/random/200x200/?person"
-                },
-                {
-                  name: "Kuba",
-                  since: "2022",
-                  image: "https://source.unsplash.com/random/200x200/?male-person"
-                },
-              ].map((member) => (<><img className="rounded-full" src={member.image} width={200} height={200} alt={member.name} /><p key={member.name}>{member.name}, Since {member.since}</p></>))
-            }
+            <div className="space-y-2 mt-5">
+              {
+                [
+                  {
+                    name: "Tomek", 
+                    since: "4.03.2023",
+                    image: "https://source.unsplash.com/random/150x150/?male-employee"
+                  },
+                  {
+                    name: "Kuba",
+                    since: "4.03.2023",
+                    image: "https://source.unsplash.com/random/150x150/?male-person"
+                  },
+                  {
+                    name: "Konrad",
+                    since: "some time.",
+                    image: "https://source.unsplash.com/random/150x150/?male-face"
+                  },
+                ].map((member) => (
+                  <div className="backdrop-brightness-75 backdrop-blur-xl p-5 rounded-2xl shadow-lg flex hover:scale-[105%] transition-all duration-[120ms] ease-in-out hover:bg-zinc-900">
+                    <img className="rounded-full mx-auto shadow-lg mb-4" src={member.image} width={150} height={150} alt={member.name} />
+                    <div>
+                      <p className="mb-2 text-center font-medium text-xl">
+                        {member.name}
+                      </p>
+                      <p className="text-center">
+                        Since <code>{member.since}</code>
+                      </p>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
           </div>
         </div>
 
