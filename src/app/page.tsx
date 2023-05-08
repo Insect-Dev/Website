@@ -19,13 +19,28 @@ export default function Home() {
 
       <div className="space-y-2 pt-14 pb-24 text-lg">
 
-        <div className="bg-red-500 w-full [min-height:20px] p-2 text-white">
+        <div className="flex bg-red-500 w-full [min-height:20px] p-2 text-white space-x-2">
           <div className="bg-lime-500 w-1/3 p-3">
             <h2 className="text-xl font-semibold">About Us</h2>
             <p>
               We are a group creating games. <br />
               Currently we are only 2 people, but we hope to grow.
             </p>
+          </div>
+          <div className="bg-blue-500 w-2/3 p-3">
+            <h2 className="text-xl font-semibold">Our Team</h2>
+            {
+              [
+                {
+                  name: "Tomek", 
+                  since: "2023"
+                },
+                {
+                  name: "Kuba",
+                  since: "2022"
+                },
+              ].map((member) => (<p key={member.name}>{member.name}, Since {member.since}</p>))
+            }
           </div>
         </div>
 
