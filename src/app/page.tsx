@@ -18,26 +18,25 @@ export default function Home() {
       </div>
 
       <div className="space-y-2 pt-14 pb-24 text-lg">
-
-        <div className="flex bg-red-500 w-full [min-height:20px] p-2 text-white space-x-2">
-          <div className="bg-lime-500 w-1/3 p-3">
+        <div className="flex p-3 text-white space-x-3">
+          <div className="rounded-2xl backdrop-brightness-90 shadow-lg w-1/2 p-5">
             <h2 className="text-xl font-semibold">About Us</h2>
             <p>
               We are a group creating games. <br />
-              Currently we are only 2 people, but we hope to grow. <br/>
-              This text really needs to be longer. It's too short for professional description. <br/>
+              Currently we are only 2 people, but we hope to grow. <br />
+              This text really needs to be longer. It's too short for professional description. <br />
               So I'll just write some dummy text that will be used for filling out the space <br />
               I wonder what will be this text in production... <br />
               Probably something stoopid.
             </p>
           </div>
-          <div className="bg-blue-500 w-2/3 p-3">
+          <div className="rounded-2xl backdrop-brightness-90 shadow-lg w-1/2 p-3">
             <h2 className="text-xl font-semibold">Our Team</h2>
             <div className="space-y-2 mt-5">
               {
                 [
                   {
-                    name: "Tomek", 
+                    name: "Tomek",
                     since: "4.03.2023",
                     image: "https://source.unsplash.com/random/150x150/?male-employee"
                   },
