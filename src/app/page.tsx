@@ -13,7 +13,7 @@ export default function Home() {
           <a href="#">Contact</a>
         </div>
         <div className="w-1/2 justify-end space-x-5 flex sm:hidden menu">
-          <FontAwesomeIcon icon={faBars} className="w-12 h-12"/>
+          <FontAwesomeIcon icon={faBars} className="w-12 h-12" />
         </div>
       </div>
 
