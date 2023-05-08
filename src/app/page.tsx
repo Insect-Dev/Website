@@ -24,7 +24,11 @@ export default function Home() {
             <h2 className="text-xl font-semibold">About Us</h2>
             <p>
               We are a group creating games. <br />
-              Currently we are only 2 people, but we hope to grow.
+              Currently we are only 2 people, but we hope to grow. <br/>
+              This text really needs to be longer. It's too short for professional description. <br/>
+              So I'll just write some dummy text that will be used for filling out the space <br />
+              I wonder what will be this text in production... <br />
+              Probably something stoopid.
             </p>
           </div>
           <div className="bg-blue-500 w-2/3 p-3">
