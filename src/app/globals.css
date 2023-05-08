@@ -7,7 +7,7 @@
 }
 
 .menu * {
-    transition: all 400ms ease-in-out;
+    transition: all 120ms ease-in-out;
 }
 
 .menu :hover {
