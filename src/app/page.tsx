@@ -33,13 +33,15 @@ export default function Home() {
               [
                 {
                   name: "Tomek", 
-                  since: "2023"
+                  since: "2023",
+                  image: "https://source.unsplash.com/random/200x200/?person"
                 },
                 {
                   name: "Kuba",
-                  since: "2022"
+                  since: "2022",
+                  image: "https://source.unsplash.com/random/200x200/?male-person"
                 },
-              ].map((member) => (<p key={member.name}>{member.name}, Since {member.since}</p>))
+              ].map((member) => (<><img className="rounded-full" src={member.image} width={200} height={200} alt={member.name} /><p key={member.name}>{member.name}, Since {member.since}</p></>))
             }
           </div>
         </div>
