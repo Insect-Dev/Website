@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 .menu:has(:hover) :not(:hover) {
-    @apply text-slate-500;
-    transform: scale(10%);
+    @apply text-slate-200;
+    transform: scale(95%);
 }
 
 .menu * {
