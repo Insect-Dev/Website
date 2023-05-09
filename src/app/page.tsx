@@ -18,8 +18,8 @@ export default function Home() {
       </div>
 
       <div className="space-y-2 pt-14 pb-24 text-lg">
-        <div className="flex p-3 text-white space-x-3">
-          <div className="rounded-2xl backdrop-brightness-90 shadow-lg w-1/2 p-5">
+        <div className="flex p-3 space-x-3">
+          <div className="rounded-2xl dark:backdrop-brightness-90 shadow-lg w-1/2 p-5">
             <h2 className="text-xl font-semibold">About Us</h2>
             <p>
               We are a group creating games. <br />
@@ -30,7 +30,7 @@ export default function Home() {
               Probably something stoopid.
             </p>
           </div>
-          <div className="rounded-2xl backdrop-brightness-90 shadow-lg w-1/2 p-3">
+          <div className="rounded-2xl dark:backdrop-brightness-90 shadow-lg w-1/2 p-3">
             <h2 className="text-xl font-semibold">Our Team</h2>
             <div className="space-y-2 mt-5">
               {
@@ -51,7 +51,7 @@ export default function Home() {
                     image: "https://source.unsplash.com/random/150x150/?male-face"
                   },
                 ].map((member) => (
-                  <div className="backdrop-brightness-75 backdrop-blur-xl p-5 rounded-2xl shadow-lg flex hover:scale-[105%] transition-all duration-[120ms] ease-in-out hover:bg-zinc-900">
+                  <div className="dark:backdrop-brightness-75 backdrop-blur-xl p-5 rounded-2xl shadow-lg flex hover:scale-[105%] transition-all duration-[120ms] ease-in-out hover:bg-zinc-100 dark:hover:bg-zinc-900">
                     <img className="rounded-full mx-auto shadow-lg mb-4" src={member.image} width={150} height={150} alt={member.name} />
                     <div>
                       <p className="mb-2 text-center font-medium text-xl">
