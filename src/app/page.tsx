@@ -24,8 +24,8 @@ export default function Home() {
             <p>
               We are a group creating games. <br />
               Currently we are only 2 people, but we hope to grow. <br />
-              This text really needs to be longer. It's too short for professional description. <br />
-              So I'll just write some dummy text that will be used for filling out the space <br />
+              This text really needs to be longer. It&apos;s too short for professional description. <br />
+              So I&apos;ll just write some dummy text that will be used for filling out the space <br />
               I wonder what will be this text in production... <br />
               Probably something stoopid.
             </p>
