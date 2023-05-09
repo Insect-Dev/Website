@@ -51,7 +51,7 @@ export default function Home() {
                     image: "https://source.unsplash.com/random/150x150/?male-face"
                   },
                 ].map((member) => (
-                  <div className="dark:backdrop-brightness-75 backdrop-blur-xl p-5 rounded-2xl shadow-lg flex hover:scale-[105%] transition-all duration-[120ms] ease-in-out hover:bg-zinc-100 dark:hover:bg-zinc-900">
+                  <div className="dark:backdrop-brightness-75 backdrop-blur-xl p-5 rounded-2xl shadow-lg flex hover:scale-[105%] transition-all duration-[120ms] ease-in-out hover:bg-zinc-100 dark:hover:bg-zinc-900" key={member.name}>
                     <img className="rounded-full mx-auto shadow-lg mb-4" src={member.image} width={150} height={150} alt={member.name} />
                     <div>
                       <p className="mb-2 text-center font-medium text-xl">
