@@ -16,7 +16,7 @@ YP   YP VP   V8P    YP シ`, 'color: #885d3d; font-size: 1.1rem; text-shadow: 0p
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start space-y-12 lg:px-[20%] px-6 bg-white dark:bg-zinc-900 dark:text-white text-justify">
+    <main className="flex min-h-screen flex-col items-center justify-start space-y-12 lg:px-[20%] 2xl:px-[5%] px-6 bg-white dark:bg-zinc-900 dark:text-white text-justify">
       <div className="fixed top-0 flex items-center justify-between h-16 w-full bg-white/50 dark:bg-zinc-900/50 p-5 backdrop-blur-[2px] border-b border-gray-200 [z-index:1] navbar">
         <h1 className="text-2xl font-black self-center w-1/2">Anthrodev</h1>
         <div className="w-1/2 justify-end space-x-5 hidden sm:flex menu">
@@ -44,7 +44,7 @@ YP   YP VP   V8P    YP シ`, 'color: #885d3d; font-size: 1.1rem; text-shadow: 0p
           </div>
           <div className="rounded-2xl dark:backdrop-brightness-90 shadow-lg w-full sm:w-1/2 p-3">
             <h2 className="text-xl font-semibold">Our Team</h2>
-            <div className="space-y-2 mt-5">
+            <div className="space-y-2 mt-5 2xl:flex 2xl:space-x-3">
               {
                 [
                   {
@@ -63,7 +63,7 @@ YP   YP VP   V8P    YP シ`, 'color: #885d3d; font-size: 1.1rem; text-shadow: 0p
                     image: "https://source.unsplash.com/random/150x150/?male-face"
                   },
                 ].map((member) => (
-                  <div className="dark:backdrop-brightness-75 backdrop-blur-xl p-5 rounded-2xl shadow-lg block sm:flex hover:scale-[105%] transition-all duration-[120ms] ease-in-out hover:bg-zinc-100 dark:hover:bg-zinc-900" key={member.name}>
+                  <div className="dark:backdrop-brightness-75 backdrop-blur-xl p-5 rounded-2xl shadow-lg block sm:flex 2xl:block sm:hover:scale-[105%] transition-all duration-[120ms] ease-in-out sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-900" key={member.name}>
                     <img className="rounded-full mx-auto shadow-lg mb-4" src={member.image} width={150} height={150} alt={member.name} />
                     <div>
                       <p className="mb-2 text-center font-medium text-xl">
