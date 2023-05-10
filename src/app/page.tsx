@@ -1,23 +1,85 @@
+"use client";
+
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    console.log(`%c .d8b.  d8b   db d888888b
+d8' \`8b 888o  88 \`~~88~~'
+88ooo88 88V8o 88    88
+88~~~88 88 V8o88    88
+88   88 88  V888    88
+YP   YP VP   V8P    YP シ`, 'color: #885d3d; font-size: 1.1rem; text-shadow: 0px 0px 10px #885d3d;');
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start space-y-12 lg:px-[30%] px-20 bg-white dark:bg-zinc-900 dark:text-white text-justify">
-      <div className="fixed top-0 flex items-center justify-between h-16 w-full bg-white/50 dark:bg-zinc-900/50 p-5 backdrop-blur-[2px] border-b border-gray-200 navbar">
-        <h1 className="text-xl self-center w-1/2">Ant Studios</h1>
+    <main className="flex min-h-screen flex-col items-center justify-start space-y-12 lg:px-[20%] px-20 bg-white dark:bg-zinc-900 dark:text-white text-justify">
+      <div className="fixed top-0 flex items-center justify-between h-16 w-full bg-white/50 dark:bg-zinc-900/50 p-5 backdrop-blur-[2px] border-b border-gray-200 [z-index:1] navbar">
+        <h1 className="text-2xl font-black self-center w-1/2">Anthrodev</h1>
         <div className="w-1/2 justify-end space-x-5 hidden sm:flex menu">
           <a href="#">About</a>
           <a href="#">Our Games</a>
           <a href="#">Contact</a>
         </div>
         <div className="w-1/2 justify-end space-x-5 flex sm:hidden menu">
-          <FontAwesomeIcon icon={faBars} className="w-12 h-12"/>
+          <FontAwesomeIcon icon={faBars} className="w-12 h-12" />
         </div>
       </div>
 
       <div className="space-y-2 pt-14 pb-24 text-lg">
+        <div className="flex p-3 space-x-3">
+          <div className="rounded-2xl dark:backdrop-brightness-90 shadow-lg w-1/2 p-5">
+            <h2 className="text-xl font-semibold">About Us</h2>
+            <p>
+              We are a group creating games. <br />
+              Currently we are only 2 people, but we hope to grow. <br />
+              This text really needs to be longer. It&apos;s too short for professional description. <br />
+              So I&apos;ll just write some dummy text that will be used for filling out the space <br />
+              I wonder what will be this text in production... <br />
+              Probably something stoopid.
+            </p>
+          </div>
+          <div className="rounded-2xl dark:backdrop-brightness-90 shadow-lg w-1/2 p-3">
+            <h2 className="text-xl font-semibold">Our Team</h2>
+            <div className="space-y-2 mt-5">
+              {
+                [
+                  {
+                    name: "Tomek",
+                    since: "4.03.2023",
+                    image: "https://source.unsplash.com/random/150x150/?male-employee"
+                  },
+                  {
+                    name: "Kuba",
+                    since: "4.03.2023",
+                    image: "https://source.unsplash.com/random/150x150/?male-person"
+                  },
+                  {
+                    name: "Konrad",
+                    since: "some time.",
+                    image: "https://source.unsplash.com/random/150x150/?male-face"
+                  },
+                ].map((member) => (
+                  <div className="dark:backdrop-brightness-75 backdrop-blur-xl p-5 rounded-2xl shadow-lg flex hover:scale-[105%] transition-all duration-[120ms] ease-in-out hover:bg-zinc-100 dark:hover:bg-zinc-900" key={member.name}>
+                    <img className="rounded-full mx-auto shadow-lg mb-4" src={member.image} width={150} height={150} alt={member.name} />
+                    <div>
+                      <p className="mb-2 text-center font-medium text-xl">
+                        {member.name}
+                      </p>
+                      <p className="text-center">
+                        Since <code>{member.since}</code>
+                      </p>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ex nec nisl suscipit sollicitudin. Vestibulum metus diam, tristique a dictum in, sagittis eget turpis. Cras venenatis fermentum dictum. Etiam mi urna, consequat in fringilla ac, aliquam egestas ipsum. Nullam quis ultricies augue. Morbi cursus id velit sed consectetur. Aenean tellus enim, porttitor a finibus non, tempor sit amet ipsum.
         </p><p>
