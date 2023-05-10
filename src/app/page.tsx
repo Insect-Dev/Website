@@ -5,7 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start space-y-12 lg:px-[20%] px-20 bg-white dark:bg-zinc-900 dark:text-white text-justify">
-      <div className="fixed top-0 flex items-center justify-between h-16 w-full bg-white/50 dark:bg-zinc-900/50 p-5 backdrop-blur-[2px] border-b border-gray-200 navbar">
+      <div className="fixed top-0 flex items-center justify-between h-16 w-full bg-white/50 dark:bg-zinc-900/50 p-5 backdrop-blur-[2px] border-b border-gray-200 [z-index:1] navbar">
         <h1 className="text-2xl font-black self-center w-1/2">Ant Studios</h1>
         <div className="w-1/2 justify-end space-x-5 hidden sm:flex menu">
           <a href="#">About</a>
