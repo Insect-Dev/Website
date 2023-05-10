@@ -1,8 +1,20 @@
+"use client";
+
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    console.log(`%c .d8b.  d8b   db d888888b
+d8' \`8b 888o  88 \`~~88~~'
+88ooo88 88V8o 88    88
+88~~~88 88 V8o88    88
+88   88 88  V888    88
+YP   YP VP   V8P    YP シ`, 'color: #885d3d; font-size: 1.1rem; text-shadow: 0px 0px 10px #885d3d;');
+  }, []);
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-start space-y-12 lg:px-[20%] px-20 bg-white dark:bg-zinc-900 dark:text-white text-justify">
       <div className="fixed top-0 flex items-center justify-between h-16 w-full bg-white/50 dark:bg-zinc-900/50 p-5 backdrop-blur-[2px] border-b border-gray-200 [z-index:1] navbar">
