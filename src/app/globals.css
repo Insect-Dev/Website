@@ -13,3 +13,7 @@
         transform: scale(105%);
     }
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
