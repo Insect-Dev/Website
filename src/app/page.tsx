@@ -25,7 +25,7 @@ YP   YP VP   V8P    YP シ`,
                     Insect Dev
                 </h1>
                 <div className="w-1/2 justify-end space-x-5 hidden sm:flex menu">
-                    <a href="#">About</a>
+                    <a href="#">About Us</a>
                     <a href="#">Our Games</a>
                     <a href="#">Contact</a>
                 </div>
