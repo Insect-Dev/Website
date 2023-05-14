@@ -57,7 +57,7 @@ YP   YP VP   V8P    YP シ`,
                                 {
                                     name: "Tomek",
                                     since: "4.03.2023",
-                                    image: "https://source.unsplash.com/random/150x150/?male-employee",
+                                    image: "https://source.unsplash.com/random/150x150/?male-human",
                                 },
                                 {
                                     name: "Kuba",
