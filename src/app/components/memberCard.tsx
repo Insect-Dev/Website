@@ -11,7 +11,6 @@ export const MemberCard: FC<Props> = (props) => {
     return (
         <div
             className="dark:backdrop-brightness-75 backdrop-blur-xl p-5 rounded-2xl shadow-lg block sm:flex 2xl:block sm:hover:scale-[105%] transition-all duration-[120ms] ease-in-out sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-900"
-            key={props.name}
         >
             <img
                 className="rounded-full mx-auto shadow-lg mb-4"

@@ -59,7 +59,7 @@ YP   YP VP   V8P    YP シ`,
                                     since: "some time.",
                                     image: "https://source.unsplash.com/random/150x150/?male-face",
                                 },
-                            ].map((member) => <MemberCard name={member.name} imageUrl={member.image} since={member.since}/>)}
+                            ].map((member) => <MemberCard key={member.name} name={member.name} imageUrl={member.image} since={member.since}/>)}
                         </div>
                     </div>
                 </div>
