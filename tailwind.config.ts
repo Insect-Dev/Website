@@ -7,6 +7,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        'screen-d': '100dvh'
+      }
+    }
   },
   plugins: [],
 }
