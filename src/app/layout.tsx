@@ -15,8 +15,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>{children}</body>
+    <html lang='en' className='no-scrollbar'>
+      <body
+        className={`${inter.className} bg-gray-100 text-black dark:bg-gray-900 dark:text-white`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
