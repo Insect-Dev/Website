@@ -1,4 +1,5 @@
 import GameDemo from './GameDemo'
+import MediaQuery from 'react-responsive'
 
 export default function Hero(props: {
   onGameFullscreen: (newFullscreen: boolean) => void
@@ -13,7 +14,9 @@ export default function Hero(props: {
       </div>
 
       <div className='flex w-1/3 items-center'>
-        <GameDemo onGameFullscreen={props.onGameFullscreen} />
+        <MediaQuery minWidth={1024}>
+          <GameDemo onGameFullscreen={props.onGameFullscreen} />
+        </MediaQuery>
       </div>
     </div>
   )
