@@ -1,5 +1,3 @@
-import { MutableRefObject } from 'react'
-import Navbar from '../Navbar'
 import GameDemo from './GameDemo'
 
 export default function Hero(props: {

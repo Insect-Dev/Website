@@ -2,7 +2,7 @@
 
 import { faMaximize, faMinimize } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { MutableRefObject, useState } from 'react'
+import { useState } from 'react'
 import { Unity, useUnityContext } from 'react-unity-webgl'
 
 export default function GameDemo(props: { onGameFullscreen: (newFullscreen: boolean) => void }) {
