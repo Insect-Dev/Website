@@ -5,7 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import { Unity, useUnityContext } from 'react-unity-webgl'
 
-export default function GameDemo(props: { onGameFullscreen: (newFullscreen: boolean) => void }) {
+export default function GameDemo(props: {
+  onGameFullscreen: (newFullscreen: boolean) => void
+}) {
   const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
     dataUrl: 'scalar/Scalar.data',
     frameworkUrl: 'scalar/Scalar.framework.js',
